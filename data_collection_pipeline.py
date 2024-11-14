@@ -19,7 +19,7 @@ VERBOSE = False
 TIMESTAMP = datetime.now().isoformat()
 
 logging.basicConfig(
-    filename="mmfc_pipeline.log",
+    filename="mmcv_pipeline.log",
     level=logging.INFO,
     format="%(asctime)s:%(levelname)s:%(message)s",
 )
@@ -223,7 +223,7 @@ if __name__ == "__main__":
             start=processed_count,
         ),
         total=len(extracted_qa[processed_count:]),
-        desc="Processing MMFC",
+        desc="Processing MMCV",
     ):
         try:
             max_iterations = 3

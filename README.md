@@ -1,4 +1,4 @@
-# MMFC
+# Multi-Hop Multimodal Claim Verification
 
 ---
 
@@ -15,8 +15,8 @@ Requires Python 3.9 to run.
 Install conda environment from `environment.yml` file.
 
 ```sh
-conda env create -n MMFC --file environment.yml
-conda activate MMFC
+conda env create -n mmcv --file environment.yml
+conda activate mmcv
 ```
 
 ## Setup

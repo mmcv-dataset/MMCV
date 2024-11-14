@@ -15,7 +15,7 @@ VERBOSE = False
 TIMESTAMP = datetime.now().isoformat()
 
 logging.basicConfig(
-    filename="mmfc_pipeline.log",
+    filename="mmcv_pipeline.log",
     level=logging.INFO,
     format="%(asctime)s:%(levelname)s:%(message)s",
 )
@@ -42,19 +42,21 @@ def textual_feedback(claim):
     )
     return response
 
+
 def process_json_file_live(input_file, output_file):
-    with open(input_file, 'r') as f:
+    with open(input_file, "r") as f:
         data = json.load(f)
     print(f"Total instances to process: {len(data)}")
     processed_data = []
     for item in tqdm(data, desc="Processing claims"):
-        final_claim = item['final_claim']
-        item['negation_claim'] = textual_feedback(final_claim).strip()
+        final_claim = item["final_claim"]
+        item["negation_claim"] = textual_feedback(final_claim).strip()
         processed_data.append(item)
-        with open(output_file, 'w') as f:
+        with open(output_file, "w") as f:
             json.dump(processed_data, f, indent=2)
     print(f"Processing complete. Output saved to {output_file}")
 
-input_file = 'Final/mmfc_train_part2.json'
-output_file = 'Final/neg_mmfc_train_part2.json'
-process_json_file_live(input_file, output_file)
+
+# input_file = "Final/mmcv_train_part2.json"
+# output_file = "Final/neg_mmcv_train_part2.json"
+# process_json_file_live(input_file, output_file)
