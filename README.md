@@ -1,6 +1,6 @@
 # Multi-Hop Multimodal Claim Verification
 
-This repository contains code and data for the paper: _Piecing It All Together: Verifying Multi-Hop Multimodal Claims._ [Paper](https://arxiv.org/abs/2411.09547)
+This repository contains code and data for the paper: [Piecing It All Together: Verifying Multi-Hop Multimodal Claims](https://arxiv.org/abs/2411.09547) in _COLING 2025_.
 
 ### Changelog
 
