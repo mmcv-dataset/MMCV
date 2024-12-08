@@ -1,0 +1,1 @@
+wget -P MMQA_Raw/ https://multimodalqa-images.s3-us-west-2.amazonaws.com/final_dataset_images/final_dataset_images.zip
