@@ -1,10 +1,12 @@
 # Multi-Hop Multimodal Claim Verification
 
-[Dataset](#mmcv) | [Setup](#setup) | [Installation](#installation) | [To Run](#to-run) | [Citation](#citation)
-
 This repository contains code and data for the paper: _Piecing It All Together: Verifying Multi-Hop Multimodal Claims._ [Paper](https://arxiv.org/abs/2411.09547)
 
-## MMCV
+### Changelog
+
+- `Nov 13, 2024` Initial release.
+
+## MMCV Dataset
 
 In the [Dataset](https://github.com/mmcv-dataset/MMCV/tree/main/Dataset) folder you will find the files for MMCV:
 
@@ -91,3 +93,7 @@ All experiment results can be found in the [MLLM_Results](https://github.com/mmc
   year={2025}
 }
 ```
+
+## License
+
+The MMCV dataset is distribued under the [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/legalcode) license.
