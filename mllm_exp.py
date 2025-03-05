@@ -81,7 +81,7 @@ class MLLM_EXP:
                 if image_id == entry["id"]:
                     image_name = entry["path"]
                     ret_list.append(f"{self.raw_image_path}{image_name}")
-                    return ret_list
+        return ret_list
 
     def retrieve_table_evidence(self, table_id_list):
         with open("MMQA_Raw/MMQA_tables.jsonl", "r") as f:
@@ -93,7 +93,7 @@ class MLLM_EXP:
             for table_id in table_id_list:
                 if table_id == entry["id"]:
                     ret_list.append(entry["table"])
-                    return ret_list
+        return ret_list
 
     @retry(wait=wait_random_exponential(min=1, max=10), stop=stop_after_attempt(5))
     def call_gemini(self, claim, text_evidence, image_list, table_evidence):
